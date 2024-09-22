@@ -1,6 +1,8 @@
 # SampUserMgmt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.15.
+## json-server for api call
+Run `npm run server` to run the db.json with [http://localhost:3000/).
 
 ## Development server
 
