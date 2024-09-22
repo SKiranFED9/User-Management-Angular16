@@ -1,0 +1,52 @@
+{
+  "tailWindUsers": [
+    {
+      "id": "UoWt7sw",
+      "firstName": "sert",
+      "lastName": "kiran",
+      "userName": "werty",
+      "department": "Maintainence",
+      "isAdmin": true
+    },
+    {
+      "id": "G1qT373",
+      "firstName": "pappu",
+      "lastName": "swetha kiran",
+      "userName": "skpappu",
+      "department": "Marketing",
+      "isAdmin": false
+    },
+    {
+      "id": "L4xlXRk",
+      "firstName": "satya",
+      "lastName": "new",
+      "userName": "goodtest",
+      "department": "Marketing",
+      "isAdmin": true
+    },
+    {
+      "id": "KrjdZj3",
+      "firstName": "sampath",
+      "lastName": "reddy",
+      "userName": "samReddy",
+      "department": "Marketing",
+      "isAdmin": ""
+    },
+    {
+      "id": "1ImUgMw",
+      "firstName": "kiran",
+      "lastName": "wr",
+      "userName": "rrrte",
+      "department": "Marketing",
+      "isAdmin": true
+    },
+    {
+      "id": "DDF7AJL",
+      "firstName": "yashu",
+      "lastName": "rani",
+      "userName": "yashhh",
+      "department": "Marketing",
+      "isAdmin": true
+    }
+  ]
+}

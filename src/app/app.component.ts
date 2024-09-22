@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'samp-UserMgmt';
+  hideAddButton  = false;
+
+  constructor(private route : Router) {
+    this.hideAddButton = false;
+  }
+  addUser() {
+    this.route.navigate(["/main-user-page/create"]);
+    this.hideAddButton = true;
+  }
+  homePage() {
+    this.hideAddButton = false;
+    this.route.navigate(["/main-user-page/home"]);
+  }
 }

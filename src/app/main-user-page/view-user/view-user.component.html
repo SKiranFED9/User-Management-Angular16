@@ -1,0 +1,78 @@
+<div class="grid grid-flow-col justify-stretch ...">
+  <div></div>
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body">
+      <h2 class="card-title uppercase">{{userForm.get("userName")?.value}}</h2>
+      <form [formGroup]="userForm">
+        <div class="border-solid border-2 border-indigo-600 ... p-8 ... shadow-md ..." *ngIf="vm$ | async as vm">
+          <div class="space-y-12">
+            <div class="border-b border-gray-900/10 pb-12" style="border-bottom:0px">
+              <input type="hidden" formControlName="id" />
+              <div class="columns-2 ...">
+                <div class="custStyle">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td *ngIf="!getBoolean">
+                          <svg width="200px" height="200px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="12" r="8" fill="#2F88FF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M42 44C42 34.0589 33.9411 26 24 26C14.0589 26 6 34.0589 6 44" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          
+                        </td>
+                        <td *ngIf="getBoolean">
+                          <svg width="200px" height="200px" viewBox="-1 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <g id="user" transform="translate(-3 -2)">
+                              <path id="secondary" fill="#2ca9bc"
+                                d="M9,15h6a5,5,0,0,1,5,5h0a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1H4a5,5,0,0,1,5-5Z" />
+                              <path id="primary"
+                                d="M20,20h0a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1H4a5,5,0,0,1,5-5h6A5,5,0,0,1,20,20ZM12,3a4,4,0,1,0,4,4A4,4,0,0,0,12,3Z"
+                                fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                            </g>
+                          </svg>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>                
+                <table class="table">
+                  <tbody>                     
+                    <tr>
+                      <td class="font-medium ... uppercase">First Name : </td>
+                      <td class="font-semibold ... capitalize" >{{userForm.get("firstName")?.value}}</td>
+                    </tr>
+                    <tr>
+                      <td class="font-medium ... uppercase">Last Name : </td>
+                      <td class="font-semibold ... capitalize" >{{userForm.get("lastName")?.value}}</td>
+                    </tr>
+                    <tr>
+                      <td class="font-medium ... uppercase">User Name : </td>
+                      <td class="font-semibold ... capitalize" >{{userForm.get("userName")?.value}}</td>
+                    </tr>
+                    <tr>
+                      <td class="font-medium ... uppercase">Department : </td>
+                      <td class="font-semibold ... capitalize" >{{userForm.get("department")?.value}}</td>
+                    </tr>
+                    <tr>
+                      <td class="font-medium ... uppercase">IsAdmin : </td>
+                      <td class="font-semibold ... capitalize" >{{userForm.get("isAdmin")?.value}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+  
+      <div class="card-actions justify-end">
+        <button class="btn btn-neutral btn-sm" (click)="backToHome()">
+          <svg width="20px" height="20px" viewBox="0 0 48 48" fill="none">
+            <rect width="48" height="48" fill="#ffffff" fill-opacity="0.01"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M44 40.8361C39.1069 34.8632 34.7617 31.4739 30.9644 30.6682C27.1671 29.8625 23.5517 29.7408 20.1182 30.303V41L4 23.5453L20.1182 7V17.167C26.4667 17.2172 31.8638 19.4948 36.3095 24C40.7553 28.5052 43.3187 34.1172 44 40.8361Z" fill="#2F88FF" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+            </svg> Back</button>
+      </div>
+    </div>
+  </div>
+  <div></div>
+  </div>
