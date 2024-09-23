@@ -5,7 +5,6 @@ import { UserManagementService } from 'src/core/services/user-management.service
 import { UmUsers } from 'src/core/um-users';
 import { User } from 'src/core/user.model';
 import { userStore } from '../userManage.store';
-import { HttpClient } from '@angular/common/http';
 
 
 @Component({

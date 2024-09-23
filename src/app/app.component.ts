@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'samp-UserMgmt';
+  title = 'User-Management';
   hideAddButton  = false;
 
   constructor(private route : Router) {
